@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação | Payment</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="navbar">
+                <a href="index.html">
+                    <img src="./assets/logo.png" alt="Logo" class="logo">
+                </a>
+                <ul class="navbar_links">
+                    <a href="./donation.html">Voltar à home</a>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="pay_container">
+            <div class="pay_first">
+                <h3>Pagamento</h3>
+                <span>Escolha a forma de pagamento</span>
+                <div class="field_first">
+                    <div class="input_field">
+                        <input type="radio" name="r_pay" value="pix" id="r_pix">
+                        <span>Pix</span>
+                    </div>
+                    <div class="input_field">
+                        <input type="radio" name="r_pay" value="cartao" id="r_cartao">
+                        <span>Cartão de Crédito</span>
+                    </div>
+                    <div class="input_field">
+                        <input type="radio" name="r_pay" value="boleto" id="r_boleto">
+                        <span>Boleto</span>
+                    </div>
+                    <button class="btn" id="btn_pay">Continuar</button>
+                </div>
+            </div>
+            <div class="pay_second">
+
+            </div>
+        </section>
+    </main>
+    <script>
+        btn_pay.addEventListener("click", (event) => {
+            event.preventDefault();
+            if (r_pix.checked) {
+                alert("Doação realizada com sucesso!");
+                console.log(r_pix.value);
+
+            } else if (r_cartao.checked) {
+                alert("Doação realizada com sucesso!");
+                console.log(r_cartao.value);
+
+            } else if (r_boleto.checked) {
+                alert("Doação realizada com sucesso!");
+                console.log(r_boleto.value);
+
+            } else {
+                alert("Selecione uma das opções de pagamento.");
+            }
+        });
+    </script>
+</body>
+</html>

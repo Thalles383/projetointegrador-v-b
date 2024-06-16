@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação | Checkout</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="navbar">
+                <a href="index.html">
+                    <img src="./assets/logo.png" alt="Logo" class="logo">
+                </a>
+                <ul class="navbar_links">
+                    <a href="./donation.html">Voltar à home</a>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="donation_main">
+        <div class="donation_container">
+            <form action="" id="form">
+                <div class="form_first">
+                    <div class="fields">
+                        <div class="input_field">
+                            <label for="instituicao">Para quem deseja doar?</label>
+                            <select name="instituicao" id="instituicao" required>
+                                <option value="" selected label>Escolha uma instituição</option>
+                                <option value="Instituição1">Instituição de Teste 1</option>
+                                <option value="Instituição2">Instituição de Teste 2</option>
+                                <option value="Instituição3">Instituição de Teste 3</option>
+                                <option value="Instituição4">Instituição de Teste 4</option>
+                                <option value="Instituição5">Instituição de Teste 5</option>
+                                <option value="Instituição6">Instituição de Teste 6</option>
+                            </select>
+                        </div>
+                        <div class="input_field">
+                            <label for="valor_donation">Que valor deseja doar?</label>
+                            <input type="valor" id="valor_donation" placeholder="Valor" required>
+                        </div>
+                    </div>
+                    <button class="btn" id="btn_next">Continuar</button>
+                </div>
+                <div class="form_second">
+                    <div class="fields">
+                        <label for="">Dados Pessoais</label>
+                        <div class="input_field">
+                            <input type="text" id="nome" placeholder="Nome" required>
+                        </div>
+                        <div class="input_field">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="input_field">
+                            <input type="tel" id="telefone" placeholder="Telefone" required>
+                        </div>
+                        <div class="input_field">
+                            <input type="text" id="cpfcnpj" placeholder="CPF/CNPJ" required>
+                        </div>
+                    </div>
+                    <button class="btn" id="submit">Continuar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

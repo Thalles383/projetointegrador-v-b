@@ -121,7 +121,7 @@ p:not(:last-of-type), .p:not(:last-of-type) {
 }
 
 .home .home_div {
-  width: 98.7vw;
+  width: 100vw;
   height: 80vh;
   background: url(../assets/pexels-pixabay-220365-bg.png) center no-repeat;
 }
@@ -223,4 +223,69 @@ p:not(:last-of-type), .p:not(:last-of-type) {
 
 .contact .footer_txt .footer_copyright {
   font-size: 1.4rem;
+}
+
+.donation_main, .pay_container {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.donation_container form .form_first{
+  position: absolute;
+}
+
+.donation_container form .form_second {
+  opacity: 0;
+  pointer-events: none;
+}
+
+form.secActive .form_second {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+form.secActive .form_first {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.donation_container form .form_first, label {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.donation_container form .fields, .donation_container form .input_field {
+  display: flex;
+  flex-direction: column;
+}
+
+.donation_container form .input_field select, .donation_container form .input_field input {
+  width: 28rem;
+  height: 4rem;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  text-align: center;
+  outline: none;
+  border: 1px solid black;
+}
+
+.donation_container form .input_field select, .donation_container form .input_field input:is(:focus, :valid){
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.donation_container form .input_field select, .donation_container form .input_field input:not(:last-of-type){
+  margin-bottom: 4rem;
+}
+
+.donation_container form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28rem;
+  height: 4rem;
+  margin: 4rem auto;
 }
